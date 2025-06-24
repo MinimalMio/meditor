@@ -8,3 +8,8 @@ LDFLAGS :=
 
 me: main.c
 	${CC} ${CCFLAGS} main.c -o me
+
+clean:
+	rm -rf *.o *.a *.so me
+
+.PHONY = clean
