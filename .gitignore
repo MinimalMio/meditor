@@ -1,0 +1,4 @@
+# Project output files
+me
+*.o
+*.a
