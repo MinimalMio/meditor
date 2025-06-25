@@ -8,9 +8,7 @@
 
 #include <ncurses.h>
 
-int screen_rows, screen_cols;
-
 extern void init_ncurses();
-extern void init_editor();
+extern void init_editor(int screen_rows, int screen_cols);
 
 #endif // __EDIT_H__

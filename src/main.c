@@ -11,7 +11,11 @@
 
 int main() {
   init_ncurses();
-  init_editor();
+
+  int screen_rows, screen_cols;
+  getmaxyx(stdscr, screen_rows, screen_cols);
+
+  init_editor(screen_rows, screen_cols);
 
   refresh();
   getchar();

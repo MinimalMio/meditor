@@ -8,13 +8,12 @@
 
 void init_ncurses() {
   initscr();
-  raw();                                      // Disable line buffering
-  noecho();                                   // Don't echo input characters
-  keypad(stdscr, TRUE);                       // Enable function keys
-  getmaxyx(stdscr, screen_rows, screen_cols); // Get screen size
+  raw();                // Disable line buffering
+  noecho();             // Don't echo input characters
+  keypad(stdscr, TRUE); // Enable function keys
 }
 
-void init_editor() {
+void init_editor(int screen_rows, int screen_cols) {
   // Create the command window for editor,
   // as normally, it will displayed at the bottom of the screen,
   // and only use 1 row.
