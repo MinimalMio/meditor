@@ -8,7 +8,7 @@ BUILD_DIR := build
 INSTALL_DIR := /usr/local/bin
 TARGET := ${BUILD_DIR}/me
 
-SRC_LIST := src/main.c
+SRC_LIST := src/main.c src/edit.c
 
 ${TARGET}: ${SRC_LIST} | ${BUILD_DIR}
 	${CC} ${CCFLAGS} ${SRC_LIST} -o ${TARGET}
