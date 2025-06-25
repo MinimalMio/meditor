@@ -1,15 +1,22 @@
 CROSS_COMPILE :=
-
 CC := ${CROSS_COMPILE}gcc
 LD := ${CROSS_COMPILE}ld
 
-CCFLAGS := -lncurses
-LDFLAGS :=
+CCFLAGS := -g -lncurses
 
-me: main.c
-	${CC} ${CCFLAGS} main.c -o me
+BUILD_DIR := build
+INSTALL_DIR := /usr/local/bin
+TARGET := ${BUILD_DIR}/me
+
+SRC_LIST := src/main.c
+
+${TARGET}: ${SRC_LIST} | ${BUILD_DIR}
+	${CC} ${CCFLAGS} ${SRC_LIST} -o ${TARGET}
+
+${BUILD_DIR}:
+	@mkdir -p $@
 
 clean:
-	rm -rf *.o *.a *.so me
+	@rm -rf ${BUILD_DIR}
 
-.PHONY = clean
+.PHONY: clean
