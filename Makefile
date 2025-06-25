@@ -2,7 +2,7 @@ CROSS_COMPILE :=
 CC := ${CROSS_COMPILE}gcc
 LD := ${CROSS_COMPILE}ld
 
-CCFLAGS := -g -lncurses
+CCFLAGS := -lncurses
 
 BUILD_DIR := build
 INSTALL_DIR := /usr/local/bin

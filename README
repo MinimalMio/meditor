@@ -3,3 +3,22 @@
 it's my personal use project.
 build it only need ncurses installed.
 use 'me' for start it.
+
+
+** Contributing **
+
+Please use clang-format format it. and open a pull request.
+
+** How to use it **
+
+Key Bindings:
+Ctrl S - Save the current file.
+Ctrl O - Open a file.
+Ctrl N - Create a new file.
+Ctrl Q - Quit the editor.
+Ctrl F - Find text in the current file.
+Ctrl R - Replace text in the current file.
+Ctrl Z - Undo the last action.
+Ctrl Y - Redo the last undone action.
+Ctrl E - Toggle filetree.
+Ctrl P - Enter command mode.

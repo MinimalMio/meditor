@@ -11,6 +11,7 @@
 
 int main() {
   init_ncurses();
+  init_editor();
 
   refresh();
   getchar();
