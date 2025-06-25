@@ -3,3 +3,7 @@ build/
 *.o
 *.a
 *.so
+
+# IDEs
+.vscode/
+.idea/
